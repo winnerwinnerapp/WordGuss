@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Word Guesser v.1</title>
+    <title>Unity WebGL Player | Word Guess</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Word Guesser v.1</div>
+        <div id="unity-build-title">Word Guess</div>
       </div>
     </div>
     <script>
@@ -56,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WordGuesserV.1.loader.js";
+      var loaderUrl = buildUrl + "/Word Guess v.1 Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WordGuesserV.1.data.unityweb",
-        frameworkUrl: buildUrl + "/WordGuesserV.1.framework.js.unityweb",
-        codeUrl: buildUrl + "/WordGuesserV.1.wasm.unityweb",
+        dataUrl: buildUrl + "/Word Guess v.1 Build.data.unityweb",
+        frameworkUrl: buildUrl + "/Word Guess v.1 Build.framework.js.unityweb",
+        codeUrl: buildUrl + "/Word Guess v.1 Build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "Word Guesser v.1",
+        productName: "Word Guess",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -80,6 +80,7 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
+
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
